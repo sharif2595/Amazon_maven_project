@@ -16,24 +16,10 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 @Listeners(utils.Itest_listener_logic.class)
-public class TC_search_product extends BaseClass {
+public class TC_005_search_product extends BaseClass {
 	
-	SoftAssert sa=new SoftAssert();
 	
-	@DataProvider(name="search_data")
-	public Object[][] testdata() throws EncryptedDocumentException, IOException
-	{
-		Object[][]data=new Object[1][1];
-		
-		FileInputStream fn=new FileInputStream("C:\\Users\\zafar\\eclipse-workspace\\Amazon_Pom_project\\excel_data\\data.xlsx");
-		Workbook wb= WorkbookFactory.create(fn);
-		String search_product_value=wb.getSheet("search_product").getRow(0).getCell(0).getStringCellValue();
-		System.out.println(search_product_value);
-		data[0][0]=search_product_value;
-		return data;
-	}
-	
-	@Test(priority = 0,dataProvider ="search_data", retryAnalyzer = utils.Irety_analyzer.class)
+	@Test(priority = 0,dataProvider ="search_data", retryAnalyzer = utils.Irety_analyzer.class, dataProviderClass = utils.Data_provider.class)
 	public void  Search_Product_And_vaildate_Search_product(String search_product_value)
 	{
 		Home_Page Home_Page=new Home_Page(driver);

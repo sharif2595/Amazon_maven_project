@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="modulepackage.Pom_project.TC_search_product">
+      <class name="modulepackage.Pom_project.TC_0012_Select_each_payment_method">
         <methods>
-          <include name="Vaildate_The_Count_Of_Search_Product"/>
           <include name="close_brower"/>
+          <include name="check_card_option_after_clicking"/>
           <include name="launch_browser"/>
-          <include name="Search_Product_And_vaildate_Search_product"/>
         </methods>
-      </class> <!-- modulepackage.Pom_project.TC_search_product -->
+      </class> <!-- modulepackage.Pom_project.TC_0012_Select_each_payment_method -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
