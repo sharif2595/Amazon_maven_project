@@ -122,9 +122,6 @@ public class TC_0012_Select_each_payment_method extends BaseClass {
 	}
 	
 	
-	
-	
-	
 	/*
 	@Test(priority = 5 ,enabled=false)
 	public void check_card_option_before_clicking() throws InterruptedException

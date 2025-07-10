@@ -1,69 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Hover on the element and click on sign in button]]>
-    </line>
-    <line>
-      <![CDATA[Enter vaild cred]]>
-    </line>
     <line>
       <![CDATA[Search the product and validate the search product]]>
     </line>
     <line>
-      <![CDATA[Cllick on the first product]]>
-    </line>
-    <line>
-      <![CDATA[click on add to cart icons and click on proceed to buy button]]>
-    </line>
-    <line>
-      <![CDATA[check card option before clicking]]>
-    </line>
-    <line>
-      <![CDATA[check card option after clicking]]>
+      <![CDATA[validate the search result count should be greater than 3]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-07-08T10:09:54 IST" name="Default suite" finished-at="2025-07-08T10:12:05 IST" duration-ms="131086">
+  <suite started-at="2025-07-10T13:23:58 IST" name="Suite" finished-at="2025-07-10T13:24:17 IST" duration-ms="19115">
     <groups>
     </groups>
-    <test started-at="2025-07-08T10:09:54 IST" name="Default test" finished-at="2025-07-08T10:12:05 IST" duration-ms="131086">
-      <class name="modulepackage.Pom_project.TC_0012_Select_each_payment_method">
-        <test-method is-config="true" signature="launch_browser()[pri:0, instance:modulepackage.Pom_project.TC_0012_Select_each_payment_method@7c6908d7]" started-at="2025-07-08T10:09:54 IST" name="launch_browser" finished-at="2025-07-08T10:10:11 IST" duration-ms="17007" status="PASS">
+    <test started-at="2025-07-10T13:23:58 IST" name="Test" finished-at="2025-07-10T13:24:17 IST" duration-ms="19115">
+      <class name="modulepackage.Pom_project.TC_005_search_product">
+        <test-method is-config="true" signature="launch_browser()[pri:0, instance:modulepackage.Pom_project.TC_005_search_product@198b6731]" started-at="2025-07-10T13:23:58 IST" name="launch_browser" finished-at="2025-07-10T13:24:07 IST" duration-ms="9602" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch_browser -->
-        <test-method signature="hover_element()[pri:0, instance:modulepackage.Pom_project.TC_0012_Select_each_payment_method@7c6908d7]" started-at="2025-07-08T10:10:11 IST" name="hover_element" finished-at="2025-07-08T10:10:22 IST" duration-ms="11132" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Hover on the element and click on sign in button]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- hover_element -->
-        <test-method signature="enter_vaild_cred_and_validate_username(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:modulepackage.Pom_project.TC_0012_Select_each_payment_method@7c6908d7]" started-at="2025-07-08T10:10:27 IST" name="enter_vaild_cred_and_validate_username" data-provider="get_vaild_cred" finished-at="2025-07-08T10:10:45 IST" duration-ms="17848" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[9131899877]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[9131899877]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[zafar]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Enter vaild cred]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- enter_vaild_cred_and_validate_username -->
-        <test-method signature="Search_Product_And_vaildate_Search_product(java.lang.String)[pri:2, instance:modulepackage.Pom_project.TC_0012_Select_each_payment_method@7c6908d7]" started-at="2025-07-08T10:10:46 IST" name="Search_Product_And_vaildate_Search_product" data-provider="search_data" finished-at="2025-07-08T10:10:58 IST" duration-ms="12475" status="PASS">
+        <test-method signature="Search_Product_And_vaildate_Search_product(java.lang.String)[pri:0, instance:modulepackage.Pom_project.TC_005_search_product@198b6731]" started-at="2025-07-10T13:24:09 IST" name="Search_Product_And_vaildate_Search_product" data-provider="search_data" finished-at="2025-07-10T13:24:15 IST" duration-ms="5563" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,39 +31,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- Search_Product_And_vaildate_Search_product -->
-        <test-method signature="click_on_first_product()[pri:3, instance:modulepackage.Pom_project.TC_0012_Select_each_payment_method@7c6908d7]" started-at="2025-07-08T10:10:58 IST" name="click_on_first_product" finished-at="2025-07-08T10:11:13 IST" duration-ms="14619" status="PASS">
+        <test-method signature="Vaildate_The_Count_Of_Search_Product()[pri:1, instance:modulepackage.Pom_project.TC_005_search_product@198b6731]" started-at="2025-07-10T13:24:15 IST" name="Vaildate_The_Count_Of_Search_Product" finished-at="2025-07-10T13:24:16 IST" duration-ms="1046" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Cllick on the first product]]>
+              <![CDATA[validate the search result count should be greater than 3]]>
             </line>
           </reporter-output>
-        </test-method> <!-- click_on_first_product -->
-        <test-method signature="click_on_add_to_cart_proceed_to_buy()[pri:4, instance:modulepackage.Pom_project.TC_0012_Select_each_payment_method@7c6908d7]" started-at="2025-07-08T10:11:13 IST" name="click_on_add_to_cart_proceed_to_buy" finished-at="2025-07-08T10:11:33 IST" duration-ms="20338" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[click on add to cart icons and click on proceed to buy button]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- click_on_add_to_cart_proceed_to_buy -->
-        <test-method signature="check_card_option_before_clicking()[pri:5, instance:modulepackage.Pom_project.TC_0012_Select_each_payment_method@7c6908d7]" started-at="2025-07-08T10:11:33 IST" name="check_card_option_before_clicking" finished-at="2025-07-08T10:11:47 IST" duration-ms="13721" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[check card option before clicking]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- check_card_option_before_clicking -->
-        <test-method signature="check_card_option_after_clicking()[pri:6, instance:modulepackage.Pom_project.TC_0012_Select_each_payment_method@7c6908d7]" started-at="2025-07-08T10:11:47 IST" name="check_card_option_after_clicking" finished-at="2025-07-08T10:12:02 IST" duration-ms="15178" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[check card option after clicking]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- check_card_option_after_clicking -->
-        <test-method is-config="true" signature="close_brower()[pri:0, instance:modulepackage.Pom_project.TC_0012_Select_each_payment_method@7c6908d7]" started-at="2025-07-08T10:12:02 IST" name="close_brower" finished-at="2025-07-08T10:12:05 IST" duration-ms="2883" status="PASS">
+        </test-method> <!-- Vaildate_The_Count_Of_Search_Product -->
+        <test-method is-config="true" signature="close_brower()[pri:0, instance:modulepackage.Pom_project.TC_005_search_product@198b6731]" started-at="2025-07-10T13:24:16 IST" name="close_brower" finished-at="2025-07-10T13:24:17 IST" duration-ms="434" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_brower -->
-      </class> <!-- modulepackage.Pom_project.TC_0012_Select_each_payment_method -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- modulepackage.Pom_project.TC_005_search_product -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -1,42 +1,14 @@
 package modulepackage.Pom_project;
 
-import java.io.FileInputStream;
-import java.io.IOException;
 
-import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
-import org.apache.poi.ss.util.NumberToTextConverter;
+
 import org.testng.Reporter;
-import org.testng.annotations.DataProvider;
+
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 @Listeners(utils.Itest_listener_logic.class)
 public class TC_0014_last_order_review extends BaseClass{
-	
-	@DataProvider(name="get_vaild_cred")
-	public static Object[][] testdata() throws EncryptedDocumentException, IOException
-	{
-		FileInputStream fn = new FileInputStream("C:\\Users\\zafar\\eclipse-workspace\\Amazon_Pom_project\\excel_data\\data.xlsx");
-		Workbook wb=WorkbookFactory.create(fn);
-		Sheet sh_name = wb.getSheet("Login");
-		
-		String name=wb.getSheet("Login").getRow(0).getCell(2).getStringCellValue();
-		String username=NumberToTextConverter.toText(sh_name.getRow(0).getCell(0).getNumericCellValue());
-		String password=NumberToTextConverter.toText(sh_name.getRow(0).getCell(1).getNumericCellValue());
-	
-		Object[][] d1=new Object[1][3];
-		d1[0][0]=username;
-		d1[0][1]=password;
-		d1[0][2]=name;
-		
-		return d1;
-	}
-	
-	
-	
 	
 	
 	@Test(priority = 0, retryAnalyzer = utils.Irety_analyzer.class)
@@ -50,7 +22,7 @@ public class TC_0014_last_order_review extends BaseClass{
 		Reporter.log("Hover on the element and click on sign in button");
 	}
 	
-	@Test(priority = 1, retryAnalyzer = utils.Irety_analyzer.class, dataProvider = "get_vaild_cred")
+	@Test(priority = 1, retryAnalyzer = utils.Irety_analyzer.class, dataProvider = "get_vaild_cred",dataProviderClass = utils.Data_provider.class)
 	public void enter_vaild_cred_and_validate_username(String username, String password, String name) throws InterruptedException
 	{
 		Login_Page Login_Page=new Login_Page(driver);

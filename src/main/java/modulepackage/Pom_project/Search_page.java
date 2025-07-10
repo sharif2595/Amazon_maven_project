@@ -3,11 +3,15 @@ package modulepackage.Pom_project;
 import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
@@ -43,11 +47,57 @@ public class Search_page {
 		Wait.until(ExpectedConditions.visibilityOf(remove_msg));
 		String value=remove_msg.getText();
 		return value;
+	}	
+	
+	
+	@FindBy (name="s")
+	WebElement dropdwn;
+	public void select_drop_down_value_low_to_high(WebDriver driver) throws InterruptedException
+	{
+		Wait.until(ExpectedConditions.visibilityOf(dropdwn));
+		Select sel= new Select(dropdwn);
+		sel.selectByValue("price-asc-rank");
+		Thread.sleep(5000);
+	}
+	
+
+	public void select_drop_down_avg_customer_rating(WebDriver driver) throws InterruptedException
+	{
+		
+		Wait.until(ExpectedConditions.visibilityOf(dropdwn));
+		Select sel= new Select(dropdwn);
+		sel.selectByValue("review-rank");
+		Thread.sleep(5000);
 	}
 	
 	
+	@FindBy(xpath="//span[@class='a-dropdown-prompt']")
+	WebElement avg_down;
+	public String verified_avg_downdown_selected() throws InterruptedException
+	{
+		String value=avg_down.getText();
+		return value;
+		
+	}
 	
-	public void click_delete_button()
+	public void refresh(WebDriver driver) throws InterruptedException
+	{
+		driver.navigate().refresh();
+
+	}
+	
+	@FindBy(xpath="(//div[@role='listitem']//a[@aria-describedby='price-link']//span[@class='a-price']//span[@class='a-price-whole'])[1]")
+	WebElement First_element_price;
+	public String first_element_get_price()
+	{
+		String first_price=First_element_price.getText();
+		return first_price;
+		
+	}
+
+	
+	
+	void click_delete_button()
 	{
 		Wait.until(ExpectedConditions.visibilityOf(delete_button));
 		delete_button.click();
