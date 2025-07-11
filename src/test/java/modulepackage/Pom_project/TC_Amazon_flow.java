@@ -2,77 +2,67 @@ package modulepackage.Pom_project;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(utils.Itest_listener_logic.class)
 public class TC_Amazon_flow extends BaseClass {
 	
-	@Test(priority = 0)
+	@Test(priority = 0, retryAnalyzer = utils.Irety_analyzer.class)
 	public void hover_element() throws InterruptedException
 	{
 		Home_Page Home_Page=new Home_Page(driver);
-		Thread.sleep(2000);
 		Home_Page.hover_on_element(driver);
 		Home_Page.click_on_signin_homepage();
-		Thread.sleep(2000);
 		Reporter.log("Hover on the element and click on sign in button");
 	}
 	
-	@Test(priority = 1)
-	public void enter_vaild_cred() throws InterruptedException
+	@Test(priority = 1, retryAnalyzer = utils.Irety_analyzer.class, dataProviderClass = utils.Data_provider.class, dataProvider = "get_vaild_cred")
+	public void enter_vaild_cred(String user_name, String Password) throws InterruptedException
 	{
 		Login_Page Login_Page=new Login_Page(driver);
-		Thread.sleep(2000);
-		Login_Page.input("9131899877");
-		Thread.sleep(2000);
+		Login_Page.input(user_name);
 		Login_Page.Click_on_continue_button();
-		Thread.sleep(2000);
-		Login_Page.input_password("9131899877");
-		Thread.sleep(2000);
+		Login_Page.input_password(Password);
 		Login_Page.click_on_sign_button();
-		Thread.sleep(5000);
 		Reporter.log("Enter vaild cred");
 		
 	}
 	
 
-	@Test(priority = 2)
-	public void search_product() throws InterruptedException
+	@Test(priority = 2,retryAnalyzer = utils.Irety_analyzer.class,dataProviderClass = utils.Data_provider.class, dataProvider = "search_data")
+	public void search_product(String product_search) throws InterruptedException
 	{
 		Home_Page Home_Page=new Home_Page(driver);
-		Thread.sleep(2000);
-		Home_Page.search_product("toy");
-		Thread.sleep(2000);
+		Home_Page.search_product(product_search);
 		Reporter.log("Search the prodduct");
 		
 	
 	}
 	
 	
-	@Test(priority = 3)
+	@Test(priority = 3, retryAnalyzer = utils.Irety_analyzer.class)
 	public void click_on_first_product() throws InterruptedException
 	{
-		Thread.sleep(3000);
+	
 		Search_page Search_page=new Search_page(driver);
 		Search_page.click_on_first_product();
-		Thread.sleep(4000);
 		Reporter.log("Cllick on the first product");
 	
 	}
 	
-	@Test(priority = 4)
+	@Test(priority = 4,retryAnalyzer = utils.Irety_analyzer.class)
 	public void click_on_add_to_cart_proceed_to_buy() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		
 		Product_detail_page Product_detail_page= new Product_detail_page(driver);
 		Product_detail_page.click_on_add_to_cart_button();
-		Thread.sleep(3000);
 		Product_detail_page.click_on_proced_to_buy();
-		Thread.sleep(3000);
 		Reporter.log("click on add to cart icons and click on proceed to buy button");
 	}
 
 	
-	@Test(priority = 5)
+	@Test(priority = 5,retryAnalyzer = utils.Irety_analyzer.class)
 	public void select_creditcard_option() throws InterruptedException
 	{
 		Thread.sleep(3000);

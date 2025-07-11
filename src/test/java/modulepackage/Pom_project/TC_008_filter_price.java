@@ -1,8 +1,10 @@
 package modulepackage.Pom_project;
 
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(utils.Itest_listener_logic.class)
 public class TC_008_filter_price extends BaseClass {
 	
 	

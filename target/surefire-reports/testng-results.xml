@@ -29,23 +29,23 @@
       <![CDATA[verfiy the promo code msg is displayed and msg contails is not vaild]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-07-10T13:34:45 IST" name="Suite" finished-at="2025-07-10T13:35:46 IST" duration-ms="60314">
+  <suite started-at="2025-07-11T14:33:57 IST" name="Suite" finished-at="2025-07-11T14:35:27 IST" duration-ms="90485">
     <groups>
     </groups>
-    <test started-at="2025-07-10T13:34:45 IST" name="Test" finished-at="2025-07-10T13:35:46 IST" duration-ms="60314">
+    <test started-at="2025-07-11T14:33:57 IST" name="Test" finished-at="2025-07-11T14:35:27 IST" duration-ms="90485">
       <class name="modulepackage.Pom_project.TC_0013_promo_code">
-        <test-method is-config="true" signature="launch_browser()[pri:0, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-10T13:35:01 IST" name="launch_browser" finished-at="2025-07-10T13:35:11 IST" duration-ms="10039" status="PASS">
+        <test-method is-config="true" signature="launch_browser()[pri:0, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-11T14:34:28 IST" name="launch_browser" finished-at="2025-07-11T14:34:37 IST" duration-ms="9276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch_browser -->
-        <test-method signature="hover_element()[pri:0, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-10T13:35:11 IST" name="hover_element" finished-at="2025-07-10T13:35:13 IST" duration-ms="2233" status="PASS">
+        <test-method signature="hover_element()[pri:0, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-11T14:34:37 IST" name="hover_element" finished-at="2025-07-11T14:34:40 IST" duration-ms="3585" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Hover on the element and click on sign in button]]>
             </line>
           </reporter-output>
         </test-method> <!-- hover_element -->
-        <test-method signature="enter_vaild_cred_and_validate_username(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-10T13:35:13 IST" name="enter_vaild_cred_and_validate_username" data-provider="get_vaild_cred" finished-at="2025-07-10T13:35:16 IST" duration-ms="2598" status="PASS">
+        <test-method signature="enter_vaild_cred_and_validate_username(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-11T14:34:41 IST" name="enter_vaild_cred_and_validate_username" data-provider="get_vaild_cred" finished-at="2025-07-11T14:34:43 IST" duration-ms="2416" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- enter_vaild_cred_and_validate_username -->
-        <test-method signature="Search_Product_And_vaildate_Search_product(java.lang.String)[pri:2, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-10T13:35:20 IST" name="Search_Product_And_vaildate_Search_product" data-provider="search_data" finished-at="2025-07-10T13:35:25 IST" duration-ms="5034" status="PASS">
+        <test-method signature="Search_Product_And_vaildate_Search_product(java.lang.String)[pri:2, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-11T14:34:49 IST" name="Search_Product_And_vaildate_Search_product" data-provider="search_data" finished-at="2025-07-11T14:34:59 IST" duration-ms="10239" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -83,45 +83,45 @@
             </line>
           </reporter-output>
         </test-method> <!-- Search_Product_And_vaildate_Search_product -->
-        <test-method signature="click_on_first_product()[pri:3, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-10T13:35:26 IST" name="click_on_first_product" finished-at="2025-07-10T13:35:33 IST" duration-ms="7287" status="PASS">
+        <test-method signature="click_on_first_product()[pri:3, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-11T14:34:59 IST" name="click_on_first_product" finished-at="2025-07-11T14:35:11 IST" duration-ms="11700" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Click on the first product]]>
             </line>
           </reporter-output>
         </test-method> <!-- click_on_first_product -->
-        <test-method signature="click_on_add_to_cart_proceed_to_buy()[pri:4, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-10T13:35:33 IST" name="click_on_add_to_cart_proceed_to_buy" finished-at="2025-07-10T13:35:42 IST" duration-ms="8738" status="PASS">
+        <test-method signature="click_on_add_to_cart_proceed_to_buy()[pri:4, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-11T14:35:13 IST" name="click_on_add_to_cart_proceed_to_buy" finished-at="2025-07-11T14:35:24 IST" duration-ms="11053" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[click on add to cart icons and click on proceed to buy button]]>
             </line>
           </reporter-output>
         </test-method> <!-- click_on_add_to_cart_proceed_to_buy -->
-        <test-method signature="check_promo_code_applied()[pri:5, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-10T13:35:42 IST" name="check_promo_code_applied" finished-at="2025-07-10T13:35:43 IST" duration-ms="445" status="PASS">
+        <test-method signature="check_promo_code_applied()[pri:5, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-11T14:35:24 IST" name="check_promo_code_applied" finished-at="2025-07-11T14:35:25 IST" duration-ms="569" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[input promo code and click on apply button]]>
             </line>
           </reporter-output>
         </test-method> <!-- check_promo_code_applied -->
-        <test-method signature="verfiy_promo_code_msg()[pri:6, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-10T13:35:43 IST" name="verfiy_promo_code_msg" finished-at="2025-07-10T13:35:45 IST" duration-ms="1661" status="PASS">
+        <test-method signature="verfiy_promo_code_msg()[pri:6, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-11T14:35:25 IST" name="verfiy_promo_code_msg" finished-at="2025-07-11T14:35:26 IST" duration-ms="1513" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[verfiy the promo code msg is displayed and msg contails is not vaild]]>
             </line>
           </reporter-output>
         </test-method> <!-- verfiy_promo_code_msg -->
-        <test-method is-config="true" signature="close_brower()[pri:0, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-10T13:35:45 IST" name="close_brower" finished-at="2025-07-10T13:35:46 IST" duration-ms="579" status="PASS">
+        <test-method is-config="true" signature="close_brower()[pri:0, instance:modulepackage.Pom_project.TC_0013_promo_code@7f0eb4b4]" started-at="2025-07-11T14:35:27 IST" name="close_brower" finished-at="2025-07-11T14:35:27 IST" duration-ms="573" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_brower -->
       </class> <!-- modulepackage.Pom_project.TC_0013_promo_code -->
       <class name="modulepackage.Pom_project.TC_005_search_product">
-        <test-method is-config="true" signature="launch_browser()[pri:0, instance:modulepackage.Pom_project.TC_005_search_product@131774fe]" started-at="2025-07-10T13:34:45 IST" name="launch_browser" finished-at="2025-07-10T13:34:51 IST" duration-ms="5929" status="PASS">
+        <test-method is-config="true" signature="launch_browser()[pri:0, instance:modulepackage.Pom_project.TC_005_search_product@131774fe]" started-at="2025-07-11T14:33:57 IST" name="launch_browser" finished-at="2025-07-11T14:34:14 IST" duration-ms="17776" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch_browser -->
-        <test-method signature="Search_Product_And_vaildate_Search_product(java.lang.String)[pri:0, instance:modulepackage.Pom_project.TC_005_search_product@131774fe]" started-at="2025-07-10T13:34:53 IST" name="Search_Product_And_vaildate_Search_product" data-provider="search_data" finished-at="2025-07-10T13:34:58 IST" duration-ms="5011" status="PASS">
+        <test-method signature="Search_Product_And_vaildate_Search_product(java.lang.String)[pri:0, instance:modulepackage.Pom_project.TC_005_search_product@131774fe]" started-at="2025-07-11T14:34:19 IST" name="Search_Product_And_vaildate_Search_product" data-provider="search_data" finished-at="2025-07-11T14:34:25 IST" duration-ms="5945" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -135,14 +135,14 @@
             </line>
           </reporter-output>
         </test-method> <!-- Search_Product_And_vaildate_Search_product -->
-        <test-method signature="Vaildate_The_Count_Of_Search_Product()[pri:1, instance:modulepackage.Pom_project.TC_005_search_product@131774fe]" started-at="2025-07-10T13:34:59 IST" name="Vaildate_The_Count_Of_Search_Product" finished-at="2025-07-10T13:35:00 IST" duration-ms="1188" status="PASS">
+        <test-method signature="Vaildate_The_Count_Of_Search_Product()[pri:1, instance:modulepackage.Pom_project.TC_005_search_product@131774fe]" started-at="2025-07-11T14:34:25 IST" name="Vaildate_The_Count_Of_Search_Product" finished-at="2025-07-11T14:34:27 IST" duration-ms="1488" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[validate the search result count should be greater than 3]]>
             </line>
           </reporter-output>
         </test-method> <!-- Vaildate_The_Count_Of_Search_Product -->
-        <test-method is-config="true" signature="close_brower()[pri:0, instance:modulepackage.Pom_project.TC_005_search_product@131774fe]" started-at="2025-07-10T13:35:00 IST" name="close_brower" finished-at="2025-07-10T13:35:01 IST" duration-ms="463" status="PASS">
+        <test-method is-config="true" signature="close_brower()[pri:0, instance:modulepackage.Pom_project.TC_005_search_product@131774fe]" started-at="2025-07-11T14:34:27 IST" name="close_brower" finished-at="2025-07-11T14:34:28 IST" duration-ms="418" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_brower -->

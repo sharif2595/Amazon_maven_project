@@ -64,7 +64,7 @@ public class TC_0012_Select_each_payment_method extends BaseClass {
 	}
 	
 	
-	@Test(priority = 3)
+	@Test(priority = 3, retryAnalyzer = utils.Irety_analyzer.class)
 	public void click_on_first_product() throws InterruptedException
 	{
 		Thread.sleep(3000);
@@ -75,7 +75,7 @@ public class TC_0012_Select_each_payment_method extends BaseClass {
 	
 	}
 	
-	@Test(priority = 4)
+	@Test(priority = 4,retryAnalyzer = utils.Irety_analyzer.class)
 	public void click_on_add_to_cart_proceed_to_buy() throws InterruptedException
 	{
 		Thread.sleep(3000);
@@ -96,7 +96,7 @@ public class TC_0012_Select_each_payment_method extends BaseClass {
 	}
 
 	
-	@Test(priority = 5)
+	@Test(priority = 5, retryAnalyzer = utils.Irety_analyzer.class)
 	public void check_card_option_before_clicking() throws InterruptedException
 	{
 		Thread.sleep(3000);
@@ -110,7 +110,7 @@ public class TC_0012_Select_each_payment_method extends BaseClass {
 	
 	
 	
-	@Test(priority = 6)
+	@Test(priority = 6, retryAnalyzer = utils.Irety_analyzer.class)
 	public void check_card_option_after_clicking() throws InterruptedException
 	{
 		Thread.sleep(3000);

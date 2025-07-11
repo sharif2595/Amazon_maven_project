@@ -10,11 +10,12 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+
+@Listeners(utils.Itest_listener_logic.class)
 public class TC_007_pice_rating_displayed  extends BaseClass {
-	
-	
 
 	@Test(priority = 1,dataProvider ="search_data", retryAnalyzer = utils.Irety_analyzer.class, dataProviderClass = utils.Data_provider.class)
 	public void  Search_Product_And_vaildate_Search_product(String search_product_value)
@@ -27,9 +28,8 @@ public class TC_007_pice_rating_displayed  extends BaseClass {
 		sa.assertAll();
 		Reporter.log("Search the product and validate the search product");
 	}
-	
-	
-	@Test(priority = 2)
+
+	@Test(priority = 2,retryAnalyzer = utils.Irety_analyzer.class)
 	public void click_on_first_product() throws InterruptedException
 	{
 	
@@ -38,10 +38,8 @@ public class TC_007_pice_rating_displayed  extends BaseClass {
 		Reporter.log("Cllick on the first product");
 	
 	}
-	
 
-	
-	@Test(priority = 3)
+	@Test(priority = 3,retryAnalyzer = utils.Irety_analyzer.class)
 	public void verfiy_product_heading() throws InterruptedException
 	{
 		
@@ -53,8 +51,7 @@ public class TC_007_pice_rating_displayed  extends BaseClass {
 	
 	}
 	
-	
-	@Test(priority = 4)
+	@Test(priority = 4,retryAnalyzer = utils.Irety_analyzer.class)
 	public void verfiy_product_price() throws InterruptedException
 	{
 		
@@ -63,10 +60,9 @@ public class TC_007_pice_rating_displayed  extends BaseClass {
 		sa.assertEquals(product_price_displayed, true,"Something worng with the price");
 		sa.assertAll();
 		Reporter.log("verfiy_product_price");
-	
 	}
 	
-	@Test(priority = 5)
+	@Test(priority = 5,retryAnalyzer = utils.Irety_analyzer.class)
 	public void verfiy_rating() throws InterruptedException
 	{
 		Product_detail_page Product_detail_page=new Product_detail_page(driver);
@@ -82,7 +78,4 @@ public class TC_007_pice_rating_displayed  extends BaseClass {
 		
 		sa.assertAll();
 	}
-	
-	
-	
 }

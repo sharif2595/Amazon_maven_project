@@ -10,8 +10,10 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.ss.util.NumberToTextConverter;
 import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(utils.Itest_listener_logic.class)
 public class TC_004_profile_updation extends BaseClass{
 	
 	
