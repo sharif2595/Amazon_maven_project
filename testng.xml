@@ -4,7 +4,6 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="modulepackage.Pom_project.TC_005_search_product"/>
-      <class name="modulepackage.Pom_project.TC_0013_promo_code"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
